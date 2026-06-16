@@ -30,7 +30,7 @@ This phase is about looking at the network from the outside in without actively 
 
 2. Checking is my IP address is flagged for any leaks using Shodan
    
-    <img width="500" height="500" alt="SHODAN" src="https://github.com/user-attachments/assets/a2c52412-d02e-4437-b73a-ebf48765c249" />
+    <img width="450" height="500" alt="SHODAN" src="https://github.com/user-attachments/assets/a2c52412-d02e-4437-b73a-ebf48765c249" />
     
   As I found no public activity of my IP address, it's determined my IP is not publicly exposed or malicious.
 
@@ -52,11 +52,11 @@ STEP 4: Scanning for vulnerabilities and open ports
 
 1.  Click on New Scan in the top right corner ->  Select the Basic Network Scan template -> Configure the General Settings (name, IP address) -> Under the Credentials tab, I inputted SSH credentials so Nessus can conduct an internal scan of the device to report vulnerabilities accurately -> SAVE
 
-<img width="1648" height="707" alt="image" src="https://github.com/user-attachments/assets/42862868-4040-49ed-927c-845aa9fb4209" />
+<img width="800" height="350" alt="image" src="https://github.com/user-attachments/assets/42862868-4040-49ed-927c-845aa9fb4209" />
 
 2. Launch the scan using the play button wait for a few minutes for the scan to run completely 
 3. Vulnerabilities on my Raspberry Pi device:
-   <img width="1097" height="81" alt="image" src="https://github.com/user-attachments/assets/88b97826-ec88-43c0-8924-1e6fd5bf9dc3" />
+   <img width="550" height="40" alt="image" src="https://github.com/user-attachments/assets/88b97826-ec88-43c0-8924-1e6fd5bf9dc3" />
 
    Total vulnerabilities identified:
    Critical: 7
@@ -66,7 +66,7 @@ STEP 4: Scanning for vulnerabilities and open ports
    Info: 145
 
 4.  I also ran an Nmap scan to identify ports that are opened on the raspberryPI to determine if unsafe ports remain closed.
-    <img width="1052" height="247" alt="image" src="https://github.com/user-attachments/assets/163e3632-b99f-418c-88c1-8778d1361b76" />
+    <img width="500" height="122" alt="image" src="https://github.com/user-attachments/assets/163e3632-b99f-418c-88c1-8778d1361b76" />
 
 ____________________________________________________________________________________________________
 STEP 5: Documenting Vulnerabilities and Identifying top 3

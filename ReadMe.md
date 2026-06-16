@@ -30,7 +30,7 @@ This phase is about looking at the network from the outside in without actively 
 
 2. Checking is my IP address is flagged for any leaks using Shodan
    
-    <img width="700" height="500" alt="SHODAN" src="https://github.com/user-attachments/assets/a2c52412-d02e-4437-b73a-ebf48765c249" />
+    <img width="800" height="550" alt="SHODAN" src="https://github.com/user-attachments/assets/a2c52412-d02e-4437-b73a-ebf48765c249" />
     
   As I found no public activity of my IP address, it's determined my IP is not publicly exposed or malicious.
 

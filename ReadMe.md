@@ -78,25 +78,25 @@ STEP 5: Documenting Vulnerabilities and Identifying top 3
 
 TOP 3 vulnerabilities to solve: 
 
-1. Risk category: Outdated Core Debian OS System Packages
-   Affected software/packages: Imagemagick, libcrypto3-udeb, libnetsnmptrapd40, libnss3
-   CVSS Score: 9.8
-   Severity: Critical
-   Impact: It allows various attacks like local privilege escalation, arbitrary code execution, and cryptographic bypass via outdated core system binaries.
-   Remediation: Run ```sudo apt-get update && sudo apt-get upgrade -y``` to install new versions of packages
+1. Risk category: Outdated Core Debian OS System Packages <br>
+   Affected software/packages: Imagemagick, libcrypto3-udeb, libnetsnmptrapd40, libnss3 <br>
+   CVSS Score: 9.8 <br>
+   Severity: Critical <br>
+   Impact: It allows various attacks like local privilege escalation, arbitrary code execution, and cryptographic bypass via outdated core system binaries. <br>
+   Remediation: Run ```sudo apt-get update && sudo apt-get upgrade -y``` to install new versions of packages <br>
 
-2. Risk category: Third-Party Applications
-   Affected software/packages: Rclone
-   CVSS Score: 9.8
-   Severity: Critical
-   Impact: Command Injection and Authentication Bypass vulnerabilities allow remote threat actors to take full control of the application.
-   Remediation: Run ```sudo rclone selfupdate```
+2. Risk category: Third-Party Applications <br>
+   Affected software/packages: Rclone <br>
+   CVSS Score: 9.8 <br>
+   Severity: Critical <br>
+   Impact: Command Injection and Authentication Bypass vulnerabilities allow remote threat actors to take full control of the application. <br>
+   Remediation: Run ```sudo rclone selfupdate``` <br>
 
-3. Risk category: Outdated Development Libraries
-   Affected software/packages: libvpx-dev, libpng-dev, libtiff-dev
-   CVSS Score: 8.8
-   Severity: High
-   Impact: Memory corruption or denial of service (DoS) vulnerabilities within background image and video stream compiling dependencies.
+3. Risk category: Outdated Development Libraries  <br>
+   Affected software/packages: libvpx-dev, libpng-dev, libtiff-dev <br>
+   CVSS Score: 8.8 <br>
+   Severity: High <br>
+   Impact: Memory corruption or denial of service (DoS) vulnerabilities within background image and video stream compiling dependencies. <br>
    Remediation: Run ```sudo rclone selfupdate```
 
 

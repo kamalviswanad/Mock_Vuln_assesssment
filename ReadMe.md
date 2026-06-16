@@ -65,19 +65,57 @@ STEP 4: Scanning for vulnerabilities and open ports
 ____________________________________________________________________________________________________
 STEP 5: Documenting Vulnerabilities and Identifying top 3
 
-1. <img width="1106" height="146" alt="Nessus_Critical" src="https://github.com/user-attachments/assets/5ff2eba5-a119-43a5-ba9e-f3db8542cca8" />
+<img width="1106" height="146" alt="Nessus_Critical" src="https://github.com/user-attachments/assets/5ff2eba5-a119-43a5-ba9e-f3db8542cca8" />
 <img width="1102" height="247" alt="Nessus_med" src="https://github.com/user-attachments/assets/000bd9cb-f11b-4ad7-bcb7-29ffeed3145e" />
 <img width="1107" height="157" alt="Nessus_low" src="https://github.com/user-attachments/assets/4c2b3415-b3a4-4b5f-abef-6a856779ec0a" />
 <img width="1105" height="150" alt="Nessus_High" src="https://github.com/user-attachments/assets/fa1e1507-2c59-4bb2-aaba-992bb2d5db2b" />
 
-2. | Tool Name | Purpose | Status |
-| --- | --- | --- |
-| Nmap | Port scanning and network discovery | Completed |
-| Nessus | Vulnerability scanning | In Progress |
-| Wazuh | SIEM telemetry aggregation | Planned |
+TOP 3 vulnerabilities to solve: 
+
+1. Risk category: Outdated Core Debian OS System Packages
+   Affected software/packages: Imagemagick, libcrypto3-udeb, libnetsnmptrapd40, libnss3
+   CVSS Score: 9.8
+   Severity: Critical
+   Impact: It allows various attacks like local privilege escalation, arbitrary code execution, and cryptographic bypass via outdated core system binaries.
+   Remediation: Run ```sudo apt-get update && sudo apt-get upgrade -y``` to install new versions of packages
+
+2. Risk category: Third-Party Applications
+   Affected software/packages: Rclone
+   CVSS Score: 9.8
+   Severity: Critical
+   Impact: Command Injection and Authentication Bypass vulnerabilities allow remote threat actors to take full control of the application.
+   Remediation: Run ```sudo rclone selfupdate```
+
+3. Risk category: Outdated Development Libraries
+   Affected software/packages: libvpx-dev, libpng-dev, libtiff-dev
+   CVSS Score: 8.8
+   Severity: High
+   Impact: Memory corruption or denial of service (DoS) vulnerabilities within background image and video stream compiling dependencies.
+   Remediation: Run ```sudo rclone selfupdate```
 
 
+____________________________________________________________________________________________________
+STEP 6: Remidiation and Re-scan
 
+I've applied the relavant remidiation steps as mentioned in the table above and fixed the above 3 issues, and re-scanned the Nessus on Raspberry Pi to verify if the solutions were implemented properly. 
+
+<img width="1107" height="145" alt="image" src="https://github.com/user-attachments/assets/084dc1e2-59eb-451e-92ef-bca26d519432" />
+
+This indicates a low number of vulnerabilities 
+
+ Total vulnerabilities identified:
+   Critical: 0
+   High:2
+   Medium:4
+   Low: 1
+   Info: 145
+
+(A few vulnerabilities have'nt been fixed yet)
+
+
+^_^
+
+   
 
 
 

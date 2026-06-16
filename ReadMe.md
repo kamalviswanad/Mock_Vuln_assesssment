@@ -116,7 +116,7 @@ This shows a low number of vulnerabilities
    Low: 1 <br>
    Info: 145 <br>
 
-(A few vulnerabilities have'nt been fixed yet)
+(A few vulnerabilities have not been fixed yet but all vulns in the TOP 3 section have been resolved and my Raspberry PI is more secure than before)
 
 
 ^_^

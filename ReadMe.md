@@ -21,14 +21,15 @@ STEP 2: External assessment and identifying configurations
 This phase is about looking at the network from the outside in without actively attacking anything yet.
 
 1. Checking router configurations to ensure they're secure and up to date:
-   <img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 46 07 PM" src="https://github.com/user-attachments/assets/2ec7e384-5091-4463-b599-a703180f3617" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 46 06 PM" src="https://github.com/user-attachments/assets/22bcc5b2-fd52-4336-afd9-f3ba29a3307c" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 52 15 PM" src="https://github.com/user-attachments/assets/d6ee6c44-2fae-4767-a62e-155b9c055887" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 46 06 PM (1)" src="https://github.com/user-attachments/assets/31f59c33-cce0-4697-8ee8-bd12a5a90bf9" />
+  
+<img width="300" height="300" alt="WhatsApp Image 2026-06-16 at 1 52 15 PM" src="https://github.com/user-attachments/assets/d6ee6c44-2fae-4767-a62e-155b9c055887" />
+<img width="300" height="300" alt="WhatsApp Image 2026-06-16 at 1 46 06 PM (1)" src="https://github.com/user-attachments/assets/31f59c33-cce0-4697-8ee8-bd12a5a90bf9" />
+ <img width="300" height="300" alt="WhatsApp Image 2026-06-16 at 1 46 07 PM" src="https://github.com/user-attachments/assets/2ec7e384-5091-4463-b599-a703180f3617" />
+<img width="300" height="300" alt="WhatsApp Image 2026-06-16 at 1 46 06 PM" src="https://github.com/user-attachments/assets/22bcc5b2-fd52-4336-afd9-f3ba29a3307c" />
 
 
 2. Checking is my IP address is flagged for any leaks using Shodan
-    <img width="1918" height="721" alt="SHODAN" src="https://github.com/user-attachments/assets/a2c52412-d02e-4437-b73a-ebf48765c249" />
+    <img width="400" height="300" alt="SHODAN" src="https://github.com/user-attachments/assets/a2c52412-d02e-4437-b73a-ebf48765c249" />
     
   As I found no public activity of my IP address, it's determined my IP is not publicly exposed or malicious.
 

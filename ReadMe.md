@@ -2,12 +2,13 @@
 
 I used Nessus scanner to identify vulnerabilities on my RaspberryPi device and mitigated them.
 
-There are __ steps on this project:
-1.
-2.
-3.
-4.
-5.
+There are 6 steps on this project:
+1. Target Device discovery
+2. External assessment and identifying configurations
+3. Installing Nessus
+4. Scanning for vulnerabilities and open ports 
+5. Documenting Vulnerabilities and Identifying top 3
+6. Remidiation and Re-scan
 
 ____________________________________________________________________________________________________
 STEP 1: Target Device discovery
@@ -15,19 +16,22 @@ STEP 1: Target Device discovery
 1. defiing the scope :
    "Scope : Internal devices  Subnet : 10.0.0.0/24 (devices:  RaspberryPi: 10.0.0.140) "
 
-2. Network topology diagram
-
-{insert diagram later on}
-
 ____________________________________________________________________________________________________
 STEP 2: External assessment and identifying configurations
 This phase is about looking at the network from the outside in without actively attacking anything yet.
 
-1. Checking router configurations:
-   {insert photos from iphone}
+1. Checking router configurations to ensure they're secure and up to date:
+   <img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 46 07 PM" src="https://github.com/user-attachments/assets/2ec7e384-5091-4463-b599-a703180f3617" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 46 06 PM" src="https://github.com/user-attachments/assets/22bcc5b2-fd52-4336-afd9-f3ba29a3307c" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 52 15 PM" src="https://github.com/user-attachments/assets/d6ee6c44-2fae-4767-a62e-155b9c055887" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-06-16 at 1 46 06 PM (1)" src="https://github.com/user-attachments/assets/31f59c33-cce0-4697-8ee8-bd12a5a90bf9" />
+
 
 2. Checking is my IP address is flagged for any leaks using Shodan
-   {do it and insert any images}
+    <img width="1918" height="721" alt="SHODAN" src="https://github.com/user-attachments/assets/a2c52412-d02e-4437-b73a-ebf48765c249" />
+    
+  As I found no public activity of my IP address, it's determined my IP is not publicly exposed or malicious.
+
 
 ____________________________________________________________________________________________________
 STEP 3: Installing Nessus
@@ -39,7 +43,7 @@ STEP 3: Installing Nessus
                                                                  sudo systemctl start nessusd
                                                                  sudo systemctl status nessusd```
    if it's successfully you'll get a green line indicating Active: active (running) in the command output.
-5.   Nessus can be accessed at https://localhost:8834.
+5. Nessus can be accessed at https://localhost:8834.
 
 ____________________________________________________________________________________________________
 STEP 4: Scanning for vulnerabilities and open ports 
@@ -49,7 +53,7 @@ STEP 4: Scanning for vulnerabilities and open ports
 <img width="1648" height="707" alt="image" src="https://github.com/user-attachments/assets/42862868-4040-49ed-927c-845aa9fb4209" />
 
 2. Launch the scan using the play button wait for a few minutes for the scan to run completely 
-3. Vulnerabilities my Raspberry Pi device:
+3. Vulnerabilities on my Raspberry Pi device:
    <img width="1097" height="81" alt="image" src="https://github.com/user-attachments/assets/88b97826-ec88-43c0-8924-1e6fd5bf9dc3" />
 
    Total vulnerabilities identified:
@@ -59,7 +63,7 @@ STEP 4: Scanning for vulnerabilities and open ports
    Low: 2
    Info: 145
 
-4.  I also ran an Nmap scan to identify ports that are opened on the raspberryPI to determine is unsafe ports remain closed.
+4.  I also ran an Nmap scan to identify ports that are opened on the raspberryPI to determine if unsafe ports remain closed.
     <img width="1052" height="247" alt="image" src="https://github.com/user-attachments/assets/163e3632-b99f-418c-88c1-8778d1361b76" />
 
 ____________________________________________________________________________________________________
@@ -101,7 +105,7 @@ I've applied the relavant remidiation steps as mentioned in the table above and 
 
 <img width="1107" height="145" alt="image" src="https://github.com/user-attachments/assets/084dc1e2-59eb-451e-92ef-bca26d519432" />
 
-This indicates a low number of vulnerabilities 
+This shows a low number of vulnerabilities 
 
  Total vulnerabilities identified:
    Critical: 0

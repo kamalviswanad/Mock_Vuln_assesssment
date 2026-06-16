@@ -1,6 +1,6 @@
 #Mock_Vulnerability_Assessment.
 
-I used Nessus scanner to identify vulnerabilities on my RaspberryPi device and mitigated them.
+This project demonstrates an end-to-end Vulnerability Management Lifecycle conducted within my home laboratory environment. I used Nessus Essentials (free version) to run a credentialed vulnerability scan against a local network endpoint (Raspberry Pi Linux Telemetry Node). The objective was to identify system and application layer vulnerabilities, evaluate operational risks using advanced threat intelligence metrics (CVSS, VPR, EPSS), implement relavant security mitigations, and verify remediation success through post-assessment scanning.
 
 There are 6 steps on this project:
 1. Target Device discovery

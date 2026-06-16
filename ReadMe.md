@@ -58,11 +58,11 @@ STEP 4: Scanning for vulnerabilities and open ports
 3. Vulnerabilities on my Raspberry Pi device:
    <img width="550" height="40" alt="image" src="https://github.com/user-attachments/assets/88b97826-ec88-43c0-8924-1e6fd5bf9dc3" />
 
-   Total vulnerabilities identified: 
+   Total vulnerabilities identified:  <br>
    Critical: 7 <br> 
    High:22   <br>
-   Medium:9
-   Low: 2
+   Medium:9  <br>
+   Low: 2  <br>
    Info: 145
 
 5.  I also ran an Nmap scan to identify ports that are opened on the raspberryPI to determine if unsafe ports remain closed.
@@ -109,12 +109,12 @@ I've applied the relavant remidiation steps as mentioned in the table above and 
 
 This shows a low number of vulnerabilities 
 
- Total vulnerabilities identified:
-   Critical: 0
-   High:2
-   Medium:4
-   Low: 1
-   Info: 145
+ Total vulnerabilities identified: <br>
+   Critical: 0 <br>
+   High:2 <br>
+   Medium:4 <br>
+   Low: 1 <br>
+   Info: 145 <br>
 
 (A few vulnerabilities have'nt been fixed yet)
 

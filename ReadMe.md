@@ -58,9 +58,9 @@ STEP 4: Scanning for vulnerabilities and open ports
 3. Vulnerabilities on my Raspberry Pi device:
    <img width="550" height="40" alt="image" src="https://github.com/user-attachments/assets/88b97826-ec88-43c0-8924-1e6fd5bf9dc3" />
 
-   Total vulnerabilities identified:
-   Critical: 7
-   High:22
+   Total vulnerabilities identified: /n
+   Critical: 7  /n
+   High:22  /n
    Medium:9
    Low: 2
    Info: 145

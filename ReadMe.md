@@ -58,14 +58,14 @@ STEP 4: Scanning for vulnerabilities and open ports
 3. Vulnerabilities on my Raspberry Pi device:
    <img width="550" height="40" alt="image" src="https://github.com/user-attachments/assets/88b97826-ec88-43c0-8924-1e6fd5bf9dc3" />
 
-   Total vulnerabilities identified: /n
-   Critical: 7  /n
-   High:22  /n
+   Total vulnerabilities identified: 
+   Critical: 7 <br> 
+   High:22   <br>
    Medium:9
    Low: 2
    Info: 145
 
-4.  I also ran an Nmap scan to identify ports that are opened on the raspberryPI to determine if unsafe ports remain closed.
+5.  I also ran an Nmap scan to identify ports that are opened on the raspberryPI to determine if unsafe ports remain closed.
     <img width="500" height="122" alt="image" src="https://github.com/user-attachments/assets/163e3632-b99f-418c-88c1-8778d1361b76" />
 
 ____________________________________________________________________________________________________
